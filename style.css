@@ -78,7 +78,7 @@ main {
 
 .col-2 {
     flex-basis: 50%;
-    min-width: 280px;
+    min-width: 300px;
 }
 .col-2 h5 {
     color: #fff;
@@ -280,11 +280,13 @@ main {
 }
 
 .about {
+    margin-top: 100px;
     padding-top: 50px;
     
 }
 
 .projects {
+    margin-top: 100px;
     padding-top: 60px;
 }
 
@@ -365,16 +367,8 @@ main {
     color: #fff;
 }
 .contacts {
-    margin-top: 10px;
+    margin-top: 100px;
     padding: 20px 0 20px;
-}
-.col-5 {
-    width: 50%;
-    min-width: 280px;
-}
-.small-container{
-    width: 70%;
-    margin: auto;
 }
 form {
     width: 100%;
@@ -505,9 +499,6 @@ select:-webkit-autofill:focus {
     .about {
         padding-top: 0;
     }
-    .col-5 {
-        flex-basis: 90%;
-    }
     .social {
         display: flex;
         justify-content: center;
@@ -539,6 +530,6 @@ select:-webkit-autofill:focus {
         flex-basis: 80%;
     }
     .col-2 {
-        flex-basis: 90%;
+        flex-basis: 80%;
     }
 }
