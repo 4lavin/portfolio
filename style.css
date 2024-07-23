@@ -280,12 +280,11 @@ main {
 }
 
 .about {
-    margin-top: 30px;
+    margin-top: 60px;
     padding-top: 5px;
 }
 
 .projects {
-    margin-top: 30px;
     padding-top: 5px;
 }
 
@@ -366,7 +365,7 @@ main {
     color: #fff;
 }
 .contacts {
-    margin-top: 200px;
+    margin-bottom: 50px;
     padding: 5px 0;
 }
 form {
@@ -485,6 +484,9 @@ select:-webkit-autofill:focus {
 @media only screen and (max-width: 1080px) {
     .col-4 {
         flex-basis: 34%;
+    }
+    .about {
+        margin: 0;
     }
 }
 @media only screen and (max-width: 830px) {
