@@ -126,7 +126,7 @@ main {
 }
 
 .accordion.accordion-active {
-    height: 235px;
+    height: 240px;
 }
 
 .accordion-header {
@@ -530,6 +530,6 @@ select:-webkit-autofill:focus {
         flex-basis: 80%;
     }
     .col-2 {
-        flex-basis: 80%;
+        flex-basis: 70%;
     }
 }
