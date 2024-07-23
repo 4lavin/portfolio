@@ -160,7 +160,6 @@ main {
 }
 
 .col-2 .cv {
-    position: relative;
     background: none;
     border: none;
     outline: none;
@@ -169,21 +168,6 @@ main {
     font-weight: 700;
 }
 
-.col-2 .cv::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #4bf4c9;
-    bottom: -7px;
-    left: 0;
-    border-radius: 5px;
-    transition: .3s;
-}
-
-.col-2 .cv:hover::after {
-    width: 30%;
-}
 
 .services .row {
     display: flex;
