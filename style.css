@@ -691,7 +691,9 @@ input:-webkit-autofill:active{
     .quote-bottom {
         line-height: 40px;
     }
-
+    .send {
+        line-height: 40px;
+    }
     .image1 img {
         width: 100%;
     }
