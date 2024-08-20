@@ -32,7 +32,7 @@ body {
     position: absolute;
     bottom: 40px;
     left: 0;
-    padding: 40px 25px 10px;
+    padding: 40px 7% 10px;
 }
 
 .objectives-body {
@@ -121,7 +121,7 @@ main {
 
 .home-page {
     height: 100vh;
-    padding-top: 35px;
+    padding-top: 40px;
 }
 
 .home-content {
@@ -443,8 +443,6 @@ main {
 }
 
 .accordion-content .box {
-    display: flex;
-    justify-content: space-between;
     background: #1d1027;
     padding: 10px 5px;
 }
@@ -480,10 +478,12 @@ main {
 
 .skills-item {
     flex-basis: 20%;
+    min-width: 60px;
 }
 
 .skills-item img {
     width: 100%;
+    min-width: 30px;
     padding: 10px;
 }
 
@@ -523,6 +523,7 @@ main {
     color: #fff;
     font-weight: 100;
     pointer-events: none;
+    font-style: ;
 }
 .error-container {
     margin-bottom: 5px;
@@ -635,6 +636,7 @@ main {
         display: block;
         text-align: center;
         left: 50%;
+        text-wrap: nowrap;
         transform: translateX(-50%);
     }
 
@@ -659,7 +661,7 @@ main {
     }
 
     .grid-container {
-        grid-template-columns: 300px;
+        grid-template-columns: 260px;
     }
 
     .accordion-content {
@@ -682,11 +684,14 @@ main {
     .sidebar {
         width: 50px;
     }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 
     .objectives {
         display: none;
         position: fixed;
-        width: 300px;
+        width: 250px;
         left: 60px;
         background: #1d1027;
         bottom: 10px;
