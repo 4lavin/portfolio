@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     /* scroll-behavior: smooth; */
+    font-style: normal;
 }
 
 body {
@@ -24,15 +25,15 @@ body {
     width: 400px;
     height: 100vh;
     background: #1d1027;
-    padding: 40px 2%;
+    padding: 40px 2% 0;
     z-index: 99;
 }
 
 .objectives {
     position: absolute;
-    bottom: 40px;
     left: 0;
-    padding: 40px 7% 10px;
+    padding: 40px 7% 0;
+    bottom: 10px;
 }
 
 .objectives-body {
@@ -69,9 +70,8 @@ li a {
     text-decoration: none;
     color: #7d748a;
     display: block;
-    font-weight: 100;
+    font-weight: 200;
     margin: 20px 0;
-    font-style: italic;
 }
 
 li a.active {
@@ -121,9 +121,10 @@ main {
 }
 
 .home-page {
+    position: relative;
     height: 100vh;
-    padding-top: 40px;
 }
+
 
 .home-content {
     margin-top: 30px;
@@ -148,17 +149,21 @@ main {
     line-height: 40px;
 }
 
-.name {
+.home-content .name {
     color: #fff;
-    font-size: x-large;
-    font-style: italic;
+}
+.accordion .name {
+    color: #7d748a;
+}
+.accordion.accordion-active .name {
+    color: #fff;
 }
 
 .job {
     color: #7d748a;
     line-height: 15px;
-    font-size: large;
-    font-style: italic;
+    font-weight: 200;
+    font-size: larger;
 }
 
 .title2 {
@@ -170,19 +175,17 @@ main {
 .title2 p {
     position: relative;
     font-weight: 700;
-    font-style: italic;
 }
 
 .title {
     color: #3c3842;
     display: flex;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .title p {
     position: relative;
     font-weight: 700;
-    font-style: italic;
 }
 
 .title p::after {
@@ -199,7 +202,6 @@ main {
 .home-content a {
     color: #4bf4c9;
     text-decoration: none;
-    font-style: italic;
     font-weight: 700;
 }
 
@@ -214,7 +216,7 @@ main {
     display: grid;
     grid-template-columns: 350px;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .service-page {
@@ -241,7 +243,6 @@ main {
     left: 0;
     height: 5px;
     background: #4bf4c9;
-    transition: .3s;
 }
 
 .skills:hover::before {
@@ -256,13 +257,69 @@ main {
     left: 0;
     backdrop-filter: blur(2px);
     transition: .3s;
+    z-index: 5;
+}
 
+.projects::before {
+    position: absolute;
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: #7d748aea;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    z-index: 5;
+}
+
+.projects:hover::before {
+    opacity: 1;
+    transition: .2s;
+}
+
+.projects:hover::after {
+    background: none;
 }
 
 .skills img,
 .projects img {
     width: 100%;
     display: block;
+}
+
+.skills h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 30px;
+    font-weight: 900;
+    color: #fff;
+    opacity: 0;
+    transition: .2s;
+    z-index: 9;
+}
+
+.projects small {
+    top: 0;
+    left: 0;
+    padding: 20px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+}
+
+.projects:hover small,
+.skills:hover h1 {
+    opacity: 1;
+    transition: .2s;
 }
 
 .image-container {
@@ -312,7 +369,6 @@ main {
 .desc {
     position: absolute;
     bottom: 0;
-    font-style: italic;
     color: #fff;
     font-weight: 700;
     left: 5px;
@@ -330,13 +386,11 @@ main {
 }
 
 .projects p {
-    font-style: italic;
     font-size: small;
     color: #fff;
 }
 
 .projects h3 {
-    font-style: italic;
     text-align: center;
     color: #fff;
     margin-top: 10px;
@@ -356,6 +410,7 @@ main {
     background: #4bf4c9;
     margin: 3px;
     border-radius: 2px;
+    font-style: normal;
 }
 
 .arrow-down {
@@ -377,24 +432,6 @@ main {
     font-size: 40px;
     bottom: 10%;
 } */
-.skills h1,
-.projects h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    line-height: 30px;
-    font-weight: 900;
-    font-style: italic;
-    color: #fff;
-    opacity: 0;
-    transition: .3s;
-}
-
-.skills:hover h1 {
-    opacity: 1;
-}
 
 .projects .git {
     display: block;
@@ -452,6 +489,7 @@ main {
 }
 
 .accordion-content .box {
+    position: relative;
     background: #1d1027;
     padding: 10px 5px;
 }
@@ -463,18 +501,22 @@ main {
 .accordion-content p {
     color: #7d748a;
     font-weight: 600;
-    font-style: italic;
 }
-
+.accordion-content .box .place {
+    font-weight: 200;
+}
 .accordion-content .date {
     color: #4bf4c9;
-    font-weight: 600;
-    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    bottom: -13px;
+    right: 1px;
+    margin: 0;
 }
 
 .accordion-content h3 {
     color: #fff;
-    font-style: italic;
 }
 
 .accordion-content-skills {
@@ -512,6 +554,20 @@ main {
     height: 100vh;
     position: relative;
 }
+.home-page .container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10%;
+}
+.contacts-page .container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10%;
+}
 
 .form-group {
     position: relative;
@@ -522,7 +578,7 @@ main {
 }
 
 .form-group:nth-child(3) {
-    height: 180px;
+    height: 150px;
 }
 
 .form-group label {
@@ -530,9 +586,8 @@ main {
     left: 10px;
     top: 18px;
     color: #fff;
-    font-weight: 100;
+    font-weight: 200;
     pointer-events: none;
-    font-style: italic;
 }
 
 .error-container {
@@ -581,13 +636,15 @@ main {
     top: 5px;
     font-size: smaller;
 }
+
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: #ffffff;
 }
+
 .submit {
     width: 100%;
     height: 50px;
@@ -618,6 +675,7 @@ input:-webkit-autofill:active{
     color: #7d748a;
     font-size: 30px;
 }
+
 .social-item span {
     position: absolute;
     bottom: -15px;
@@ -628,9 +686,11 @@ input:-webkit-autofill:active{
     text-wrap: nowrap;
     display: none;
 }
-.social-item a:hover + span{
+
+.social-item a:hover+span {
     display: block;
 }
+
 .social-item a:hover {
     color: #fff;
     transition: .3s;
@@ -691,9 +751,11 @@ input:-webkit-autofill:active{
     .quote-bottom {
         line-height: 40px;
     }
+
     .send {
         line-height: 45px;
     }
+
     .image1 img {
         width: 100%;
     }
@@ -723,9 +785,16 @@ input:-webkit-autofill:active{
 }
 
 @media only screen and (max-width: 600px) {
+    .arrow-down {
+        bottom: 10px;
+    }
 
-    .home-page {
-        padding-top: 70px;
+    .name {
+        line-height: 30px;
+    }
+
+    .job {
+        line-height: 20px;
     }
 
     .sidebar {
@@ -735,7 +804,9 @@ input:-webkit-autofill:active{
     .grid-container {
         grid-template-columns: 1fr;
     }
-
+    .hide {
+        display: block;
+    }
     .objectives {
         display: none;
         position: fixed;
@@ -768,14 +839,9 @@ input:-webkit-autofill:active{
         font-size: 30px;
         right: 0;
     }
-
-    /* .objectives-body {
-        color: #fff;
-    } */
     main {
         margin-left: 50px;
     }
-
     li a .icon {
         display: block;
         text-align: center;

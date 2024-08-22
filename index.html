@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
         referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <div class="sidebar">
-        <li>
+        <li data-aos="fade-right" data-aos-delay="300">
             <a href="#home-page" class="nav-link active">
                 <p>Home</p>
                 <span class="icon"><i class="ri-home-line"></i></span>
@@ -51,19 +52,19 @@
             <i class="ri-information-line"></i>
         </div>
         <div class="objectives">
-            <div class="title2">
+            <div class="title2" data-aos="fade-right" data-aos-delay="200">
                 <p>Profile</p>
             </div>
-            <div class="close">
+            <!-- <div class="close">
                 <i class="ri-close-line"></i>
-            </div>
-            <div class="objectives-body">
+            </div> -->
+            <div class="objectives-body" data-aos="fade-right">
                 <small>Information Technology graduate with a Bachelor's degree from Saint Vincent College of Cabuyao.
                     <span class="hide">Successfully completed a capstone project focused on software development. I am
                         currently seeking for
                         entry-level position in any related IT or computer engineering job.</span></small>
             </div>
-            <div class="remove">
+            <!-- <div class="remove">
                 <div class="title2">
                     <p>Personal Skills</p>
                 </div>
@@ -89,57 +90,57 @@
                         <span>Effective Communication</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <main>
-        <section class="home-page" id="home-page">
+        <section class="home-page" id="home-page" data-aos="fade-right" >
             <div class="container">
                 <div class="image1">
                     <img src="assets/profile.png" alt="">
                 </div>
                 <div class="home-content">
                     <h1 class="quote-top">WHAT EVER YOU ARE</h1>
-                    <h1 class="quote-bottom">BE A GOOD ONE</h1>
+                    <h1 class="quote-bottom" >BE A GOOD ONE</h1>
                     <br>
-                    <h1 class="name">Alvin Ganas</h1>
-                    <h1 class="job">Front End Developer</h1>
+                    <h1 class="name">ALVIN GAÑAS</h1>
+                    <p class="job">Passionate Front End Developer</p>
                     <br>
-                    <a href="">Download CV/Resume</a>
+                    <a href="https://drive.google.com/file/d/1weHRq-RU6X8673rp4Ja4nKpYKWGlk-QM/view?usp=sharing" target="_blank">Download CV</a>
                 </div>
             </div>
-            <div class="arrow-down">
+            <div class="arrow-down" >
                 <a href="#contacts-page"><i class="ri-arrow-down-double-fill"></i></a>
             </div>
         </section>
-        <section class="service-page" id="service-page">
+        <section class="service-page" id="service-page" data-aos="fade-right">
             <div class="container">
                 <div class="title">
                     <p>Services</p>
                 </div>
                 <br>
                 <div class="grid-container">
-                    <div class="skills" data-label="GRAPHIC DESIGN">
+                    <div class="skills" data-label="GRAPHIC DESIGN"  data-aos="fade-right" data-aos-delay="300">
                         <img src="assets/graphic.png" alt="">
                         <h1>GRAPHIC DESIGN</h1>
                     </div>
-                    <div class="skills" data-label="FRONT END DEVELOPER">
+                    <div class="skills" data-label="FRONT END DEVELOPER"  data-aos="fade-right" data-aos-delay="200">
                         <img src="assets/code.png" alt="">
                         <h1>FRONT END DEVELOPER</h1>
                     </div>
-                    <div class="skills" data-label="WEB DESIGN">
+                    <div class="skills" data-label="WEB DESIGN"  data-aos="fade-right" data-aos-delay="300">
                         <img src="assets/digital.png" alt="">
                         <h1>DIGITAL ART</h1>
                     </div>
-                    <div class="skills" data-label="WEB DESIGN">
+                    <div class="skills" data-label="WEB DESIGN"  data-aos="fade-right" data-aos-delay="200">
                         <img src="assets/web.png" alt="">
                         <h1>WEB DESIGN</h1>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about-page" id="about-page">
+        <section class="about-page" id="about-page" data-aos="fade-right">
             <div class="container">
                 <div class="title">
                     <p>About</p>
@@ -148,9 +149,9 @@
                     <img src="assets/profile2.png" alt="">
                 </div>
                 <div class="about-content">
-                    <div class="accordion accordion-active">
+                    <div class="accordion accordion-active" data-aos="fade-right" data-aos-delay="400">
                         <div class="accordion-header">
-                            <h1 class="name">PERSONAL INFORMATION</h1>
+                            <h1 class="name">Personal Information</h1>
                             <i class="ri-arrow-up-s-line"></i>
                         </div>
                         <div class="accordion-content">
@@ -172,47 +173,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion">
+                    <div class="accordion" data-aos="fade-right" data-aos-delay="300">
                         <div class="accordion-header">
                             <h1 class="name">Educational Attainment</h1>
                             <i class="ri-arrow-up-s-line"></i>
                         </div>
                         <div class="accordion-content">
                             <div class="box">
-                                <div>
-                                    <p>Elementary</p>
-                                    <h3>North Marie Montessori</h3>
-                                    <p>Canlubang</p>
-                                    <p class="date">2014</p>
-                                </div>
+                                <p>Elementary</p>
+                                <h3>North Marie Montessori <br>Academy</h3>
+                                <p class="place">Canlubang, Laguna</p>
+                                <h1 class="date">2014</h1>
                             </div>
                             <div class="box">
-                                <div>
-                                    <p>HighSchool</p>
-                                    <h3>PaloAlto Integrated<br>School</h3>
-                                    <p>PaloAlto</p>
-                                    <p class="date">2018</p>
-                                </div>
+                                <p>HighSchool</p>
+                                <h3>PaloAlto Integrated<br>School</h3>
+                                <p class="place">PaloAlto, Laguna</p>
+                                <h1 class="date">2018</h1>
                             </div>
                             <div class="box">
-                                <div>
-                                    <p>SeniorHighSchool</p>
-                                    <h3>Saint John and Paul Educational Found.</h3>
-                                    <p>Halang</p>
-                                    <p class="date">2020</p>
-                                </div>
+                                <p>Senior HighSchool</p>
+                                <h3>Saint John and Paul <br>Colleges</h3>
+                                <p class="place">Halang, Laguna</p>
+                                <h1 class="date">2020</h1>
                             </div>
                             <div class="box">
-                                <div>
-                                    <p>College</p>
-                                    <h3>Saint Vincent College of<br>Cabuyao</h3>
-                                    <p>Cabuyao</p>
-                                    <p class="date">2024</p>
-                                </div>
+                                <p>College</p>
+                                <h3>Saint Vincent College of<br>Cabuyao</h3>
+                                <p class="place">Cabuyao, Laguna</p>
+                                <h1 class="date">2024</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="accordion">
+                    <div class="accordion" data-aos="fade-right" data-aos-delay="200">
                         <div class="accordion-header">
                             <h1 class="name">Skills</h1>
                             <i class="ri-arrow-up-s-line"></i>
@@ -247,20 +240,20 @@
             </div>
         </section>
         <br>
-        <section class="projects-page" id="projects-page">
+        <section class="projects-page" id="projects-page" data-aos="fade-right">
             <div class="container">
                 <div class="title">
                     <p>Projects</p>
                 </div>
                 <br>
                 <div class="projects-grid-container">
-                    <div class="projects" data-label="FRONT END DEVELOPER">
+                    <div class="projects" data-label="FRONT END DEVELOPER" data-aos="fade-right" data-aos-delay="400">
                         <div class="image-container">
                             <div class="image-item">
                                 <img class="main-image" src="assets/angeline.jpg" alt="">
                                 <div class="desc angeline active-name">Angeline</div>
                                 <div class="desc shaira">Yskaela</div>
-                                <div class="desc jazz">Collen</div>
+                                <div class="desc jazz">Coleen</div>
                             </div>
                             <div class="image-item image-list image-active" id="angeline"
                                 data-label="assets/angeline.jpg">
@@ -273,6 +266,9 @@
                                 <img src="assets/colleen.jpg" alt="">
                             </div>
                         </div>
+                        <small>This is a piece of digital artwork that I created, showcasing my skills and creativity in
+                            the realm of digital art. It features a unique combination of colors, shapes, and techniques
+                            that reflect my personal style and artistic vision.</small>
                         <h3>Digital Art</h3>
                         <p>Application</p>
                         <div class="language">
@@ -281,12 +277,13 @@
                         </div>
                         <a href="https://github.com/4lavin/digital-art" target="_blank" class="git"><i
                                 class="ri-github-fill"></i></a>
-
                     </div>
-                    <div class="projects" data-label="GRAPHIC DESIGN">
+                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="300">
                         <div class="web-image">
                             <img src="assets/todo.png" alt="">
                         </div>
+                        <small>This to-do list application tracks your upcoming tasks and stores them in local storage
+                            for easy access and persistence.</small>
                         <h3>To-Do List</h3>
                         <p>Language</p>
                         <div class="language">
@@ -297,10 +294,12 @@
                         <a href="https://github.com/4lavin/todo-list" target="_blank" class="git"><i
                                 class="ri-github-fill"></i></a>
                     </div>
-                    <div class="projects" data-label="GRAPHIC DESIGN">
+                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="200">
                         <div class="web-image">
                             <img src="assets/portfolio.png" alt="">
                         </div>
+                        <small>
+                            This portfolio showcases my personal details and skills.</small>
                         <h3>Portfolio</h3>
                         <p>Language</p>
                         <div class="language">
@@ -311,10 +310,12 @@
                         <a href="https://github.com/4lavin/portfolio" target="_blank" class="git"><i
                                 class="ri-github-fill"></i></a>
                     </div>
-                    <div class="projects" data-label="GRAPHIC DESIGN">
+                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="400">
                         <div class="web-image">
                             <img src="assets/login.png" alt="">
                         </div>
+                        <small>This is my first project featuring a PHP login system that also validates the username
+                            and password.</small>
                         <h3>Login System</h3>
                         <p>Language</p>
                         <div class="language">
@@ -328,11 +329,13 @@
                                 class="ri-github-fill"></i></a>
                     </div>
 
-                    <div class="projects" data-label="GRAPHIC DESIGN">
+                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="300">
                         <div class="web-image">
                             <img src="assets/store.png" alt="">
                         </div>
-                        <h1>Store Mange</h1>
+                        <small>This system is still under development, but it currently shows customer orders and
+                            product stock levels. It also allows customers to place orders and add items to their
+                            cart.</small>
                         <h3>Store System</h3>
                         <p>Language</p>
                         <div class="language">
@@ -345,10 +348,14 @@
                         <a href="https://github.com/4lavin/store-system" target="_blank" class="git"><i
                                 class="ri-github-fill"></i></a>
                     </div>
-                    <div class="projects" data-label="GRAPHIC DESIGN">
+                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="200">
                         <div class="web-image">
                             <img src="assets/loan.png" alt="">
                         </div>
+                        <small>This is our capstone project, which monitors borrowers' loans, alerts the admin when
+                            loans are due for collection, and calculates the total amount payable according to the
+                            interest rate.
+                        </small>
                         <h3>Loan System</h3>
                         <p>Language</p>
                         <div class="language">
@@ -365,11 +372,11 @@
             </div>
         </section>
         <br>
-        <section class="contacts-page" id="contacts-page">
+        <section class="contacts-page" id="contacts-page"  data-aos="fade-right" data-aos-delay="200">
+            <div class="title" style="padding-left: 10%;">
+                <p>Contacts</p>
+            </div>
             <div class="container">
-                <div class="title">
-                    <p>Contacts</p>
-                </div>
                 <br>
                 <div class="contacts-grid-container">
                     <div class="contacts">
@@ -379,7 +386,7 @@
                         <div class="error-container">
                             <small class="error"></small>
                         </div>
-                        <form action="" id="send-message">
+                        <form action="" id="send-message" >
                             <div class="form-group">
                                 <input type="text" placeholder="" id="from_name">
                                 <label>Name</label>
@@ -398,22 +405,26 @@
                     <small class="social-text">Social</small>
                     <div class="social">
                         <div class="social-item">
+                            <a><i class="ri-smartphone-line"></i></a>
+                            <span>09948986040</span>
+                        </div>
+                        <div class="social-item">
                             <a href="https://www.facebook.com/alvinnn28/" target="_blank"><i
                                     class="ri-facebook-circle-fill"></i></a>
                             <span>Alvin Ganas</span>
                         </div>
                         <div class="social-item">
-                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i
-                                    class="ri-mail-line"></i></a>
+                            <a><i class="ri-mail-line"></i></a>
                             <span>akosialvin.28@gmail.com</span>
                         </div>
                         <div class="social-item">
                             <a href="https://github.com/4lavin" target="_blank">
                                 <i class="ri-github-fill"></i></a>
-                                <span>4lavin</span>
+                            <span>4lavin</span>
                         </div>
                         <div class="social-item">
-                            <a href="https://www.instagram.com/alavinnm/" target="_blank"><i class="ri-instagram-fill"></i></a>
+                            <a href="https://www.instagram.com/alavinnm/" target="_blank"><i
+                                    class="ri-instagram-fill"></i></a>
                             <span>alavinnm</span>
                         </div>
                     </div>
@@ -434,6 +445,10 @@
                 publicKey: "NRgZHBYycvt2R-pXp",
             });
         })();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>

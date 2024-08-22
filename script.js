@@ -58,12 +58,9 @@ $(document).ready(function () {
     //info 
     let info = $(".info")
     info.click(function () {
-        $(".objectives").addClass("show")
+        $(".objectives").toggleClass("show")
     })
-    let close = $(".close")
-    close.click(function () {
-        $(".objectives").removeClass("show")
-    })
+    
     //MyForm
 
     $("#send-message").submit(function (e) {
