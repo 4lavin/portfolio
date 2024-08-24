@@ -52,13 +52,13 @@
             <i class="ri-information-line"></i>
         </div>
         <div class="objectives">
-            <div class="title2" data-aos="fade-right" data-aos-delay="200">
+            <div class="title2">
                 <p>Profile</p>
             </div>
             <!-- <div class="close">
                 <i class="ri-close-line"></i>
             </div> -->
-            <div class="objectives-body" data-aos="fade-right">
+            <div class="objectives-body">
                 <small>Information Technology graduate with a Bachelor's degree from Saint Vincent College of Cabuyao.
                     <span class="hide">Successfully completed a capstone project focused on software development. I am
                         currently seeking for
@@ -93,27 +93,34 @@
             </div> -->
         </div>
     </div>
-
     <main>
-        <section class="home-page" id="home-page" data-aos="fade-right" >
+        <section class="home-page" id="home-page">
+            <br>
+            <br>
             <div class="container">
                 <div class="image1">
                     <img src="assets/profile.png" alt="">
                 </div>
                 <div class="home-content">
                     <h1 class="quote-top">WHAT EVER YOU ARE</h1>
-                    <h1 class="quote-bottom" >BE A GOOD ONE</h1>
+                    <h1 class="quote-bottom">BE A GOOD ONE</h1>
                     <br>
                     <h1 class="name">ALVIN GAÑAS</h1>
                     <p class="job">Passionate Front End Developer</p>
                     <br>
-                    <a href="https://drive.google.com/file/d/1weHRq-RU6X8673rp4Ja4nKpYKWGlk-QM/view?usp=sharing" target="_blank">Download CV</a>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <a href="https://drive.google.com/file/d/1weHRq-RU6X8673rp4Ja4nKpYKWGlk-QM/view?usp=sharing"
+                            target="_blank">Download CV</a>
+                        <div class="arrow-down">
+                            <a href="#contacts-page"><i class="ri-arrow-down-double-fill"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="arrow-down" >
-                <a href="#contacts-page"><i class="ri-arrow-down-double-fill"></i></a>
-            </div>
+
         </section>
+        <br>
+        <br>
         <section class="service-page" id="service-page" data-aos="fade-right">
             <div class="container">
                 <div class="title">
@@ -121,25 +128,26 @@
                 </div>
                 <br>
                 <div class="grid-container">
-                    <div class="skills" data-label="GRAPHIC DESIGN"  data-aos="fade-right" data-aos-delay="300">
+                    <div class="skills" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="300">
                         <img src="assets/graphic.png" alt="">
                         <h1>GRAPHIC DESIGN</h1>
                     </div>
-                    <div class="skills" data-label="FRONT END DEVELOPER"  data-aos="fade-right" data-aos-delay="200">
+                    <div class="skills" data-label="FRONT END DEVELOPER" data-aos="fade-right" data-aos-delay="200">
                         <img src="assets/code.png" alt="">
                         <h1>FRONT END DEVELOPER</h1>
                     </div>
-                    <div class="skills" data-label="WEB DESIGN"  data-aos="fade-right" data-aos-delay="300">
+                    <div class="skills" data-label="WEB DESIGN" data-aos="fade-right" data-aos-delay="300">
                         <img src="assets/digital.png" alt="">
                         <h1>DIGITAL ART</h1>
                     </div>
-                    <div class="skills" data-label="WEB DESIGN"  data-aos="fade-right" data-aos-delay="200">
+                    <div class="skills" data-label="WEB DESIGN" data-aos="fade-right" data-aos-delay="200">
                         <img src="assets/web.png" alt="">
                         <h1>WEB DESIGN</h1>
                     </div>
                 </div>
             </div>
         </section>
+        <br>
         <section class="about-page" id="about-page" data-aos="fade-right">
             <div class="container">
                 <div class="title">
@@ -240,6 +248,7 @@
             </div>
         </section>
         <br>
+        <br>
         <section class="projects-page" id="projects-page" data-aos="fade-right">
             <div class="container">
                 <div class="title">
@@ -247,7 +256,8 @@
                 </div>
                 <br>
                 <div class="projects-grid-container">
-                    <div class="projects" data-label="FRONT END DEVELOPER" data-aos="fade-right" data-aos-delay="400">
+                    <div class="projects digital-art" data-aos="fade-right" data-aos-delay="400">
+                        <i class="ri-information-line description" onclick='showDescription("digital-art")'></i>
                         <div class="image-container">
                             <div class="image-item">
                                 <img class="main-image" src="assets/angeline.jpg" alt="">
@@ -278,7 +288,8 @@
                         <a href="https://github.com/4lavin/digital-art" target="_blank" class="git"><i
                                 class="ri-github-fill"></i></a>
                     </div>
-                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="300">
+                    <div class="projects todo" data-aos="fade-right" data-aos-delay="300">
+                        <i class="ri-information-line description" onclick='showDescription("todo")'></i>
                         <div class="web-image">
                             <img src="assets/todo.png" alt="">
                         </div>
@@ -294,7 +305,8 @@
                         <a href="https://github.com/4lavin/todo-list" target="_blank" class="git"><i
                                 class="ri-github-fill"></i></a>
                     </div>
-                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="200">
+                    <div class="projects port" data-aos="fade-right" data-aos-delay="200">
+                        <i class="ri-information-line description" onclick='showDescription("port")'></i>
                         <div class="web-image">
                             <img src="assets/portfolio.png" alt="">
                         </div>
@@ -310,7 +322,8 @@
                         <a href="https://github.com/4lavin/portfolio" target="_blank" class="git"><i
                                 class="ri-github-fill"></i></a>
                     </div>
-                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="400">
+                    <div class="projects log" data-aos="fade-right" data-aos-delay="400">
+                        <i class="ri-information-line description" onclick='showDescription("log")'></i>
                         <div class="web-image">
                             <img src="assets/login.png" alt="">
                         </div>
@@ -329,7 +342,8 @@
                                 class="ri-github-fill"></i></a>
                     </div>
 
-                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="300">
+                    <div class="projects store" data-aos="fade-right" data-aos-delay="300">
+                        <i class="ri-information-line description" onclick='showDescription("store")'></i>
                         <div class="web-image">
                             <img src="assets/store.png" alt="">
                         </div>
@@ -348,7 +362,8 @@
                         <a href="https://github.com/4lavin/store-system" target="_blank" class="git"><i
                                 class="ri-github-fill"></i></a>
                     </div>
-                    <div class="projects" data-label="GRAPHIC DESIGN" data-aos="fade-right" data-aos-delay="200">
+                    <div class="projects loan" data-aos="fade-right" data-aos-delay="200">
+                        <i class="ri-information-line description" onclick='showDescription("loan")'></i>
                         <div class="web-image">
                             <img src="assets/loan.png" alt="">
                         </div>
@@ -372,12 +387,12 @@
             </div>
         </section>
         <br>
-        <section class="contacts-page" id="contacts-page"  data-aos="fade-right" data-aos-delay="200">
+        <br>
+        <section class="contacts-page" id="contacts-page" data-aos="fade-right" data-aos-delay="200">
             <div class="title" style="padding-left: 10%;">
                 <p>Contacts</p>
             </div>
             <div class="container">
-                <br>
                 <div class="contacts-grid-container">
                     <div class="contacts">
                         <h1 class="send">Send Email!</h1>
@@ -386,7 +401,7 @@
                         <div class="error-container">
                             <small class="error"></small>
                         </div>
-                        <form action="" id="send-message" >
+                        <form action="" id="send-message">
                             <div class="form-group">
                                 <input type="text" placeholder="" id="from_name">
                                 <label>Name</label>
@@ -402,7 +417,6 @@
                             <button type="submit" class="submit"><i class="ri-send-plane-fill"></i></button>
                         </form>
                     </div>
-                    <small class="social-text">Social</small>
                     <div class="social">
                         <div class="social-item">
                             <a><i class="ri-smartphone-line"></i></a>
@@ -429,10 +443,13 @@
                         </div>
                     </div>
                 </div>
+                <footer>
+                    <p>Copyright All Rights Reserved 2024</p>
+                    <div class="arrow-up">
+                        <a href="#home-page"><i class="ri-arrow-up-double-fill"></i></a>
+                    </div>
+                </footer>
             </div>
-            <!-- <div class="arrow-up">
-                <i class="ri-arrow-up-double-fill"></i>
-            </div> -->
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

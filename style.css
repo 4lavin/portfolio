@@ -33,7 +33,7 @@ body {
     position: absolute;
     left: 0;
     padding: 40px 7% 0;
-    bottom: 10px;
+    bottom: 20px;
 }
 
 .objectives-body {
@@ -72,6 +72,7 @@ li a {
     display: block;
     font-weight: 200;
     margin: 20px 0;
+    font-size: medium;
 }
 
 li a.active {
@@ -106,6 +107,7 @@ li a label {
 }
 
 main {
+    margin-top: -20px;
     margin-left: 400px;
 }
 
@@ -121,8 +123,7 @@ main {
 }
 
 .home-page {
-    position: relative;
-    height: 100vh;
+    /* position: relative; */
 }
 
 
@@ -143,7 +144,7 @@ main {
 }
 
 .send {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #fff;
     font-size: 50px;
     line-height: 40px;
@@ -152,9 +153,11 @@ main {
 .home-content .name {
     color: #fff;
 }
+
 .accordion .name {
     color: #7d748a;
 }
+
 .accordion.accordion-active .name {
     color: #fff;
 }
@@ -174,7 +177,7 @@ main {
 
 .title2 p {
     position: relative;
-    font-weight: 700;
+    font-weight: 200;
 }
 
 .title {
@@ -185,7 +188,7 @@ main {
 
 .title p {
     position: relative;
-    font-weight: 700;
+    font-weight: 200;
 }
 
 .title p::after {
@@ -194,6 +197,7 @@ main {
     width: 100px;
     height: 1px;
     right: -110px;
+    border-radius: 2px;
     top: 50%;
     transform: translateY(-50%);
     background: #3c3842;
@@ -216,11 +220,8 @@ main {
     display: grid;
     grid-template-columns: 350px;
     justify-content: center;
-    gap: 5px;
-}
-
-.service-page {
-    margin-bottom: 30px;
+    gap: 10px;
+    padding: 40px 0;
 }
 
 .skills,
@@ -273,15 +274,16 @@ main {
     background: #7d748aea;
     backdrop-filter: blur(2px);
     opacity: 0;
-    z-index: 5;
+    z-index: -1;
 }
 
-.projects:hover::before {
+.projects.projects-active::before {
     opacity: 1;
     transition: .2s;
+    z-index: 2;
 }
 
-.projects:hover::after {
+.projects.projects-active::after {
     background: none;
 }
 
@@ -302,7 +304,7 @@ main {
     color: #fff;
     opacity: 0;
     transition: .2s;
-    z-index: 9;
+    z-index: -1;
 }
 
 .projects small {
@@ -313,13 +315,28 @@ main {
     color: #fff;
     position: absolute;
     opacity: 0;
-    z-index: 9;
+    z-index: -1;
 }
 
-.projects:hover small,
+.projects.projects-active small {
+    opacity: 1;
+    transition: .2s;
+    z-index: 2;
+}
+
 .skills:hover h1 {
     opacity: 1;
     transition: .2s;
+    z-index: 99;
+}
+
+.description {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: #4bf4c9;
+    font-weight: 200;
+    z-index: 9;
 }
 
 .image-container {
@@ -412,15 +429,12 @@ main {
     border-radius: 2px;
     font-style: normal;
 }
-
-.arrow-down {
-    position: absolute;
-    right: 10%;
+.arrow-down, .arrow-up {
     font-size: 40px;
-    bottom: 10px;
+    color: #4bf4c9;
 }
 
-.arrow-down a {
+.arrow-down a, .arrow-up a {
     text-decoration: none;
     color: #4bf4c9;
 }
@@ -502,9 +516,11 @@ main {
     color: #7d748a;
     font-weight: 600;
 }
+
 .accordion-content .box .place {
     font-weight: 200;
 }
+
 .accordion-content .date {
     color: #4bf4c9;
     font-weight: 700;
@@ -550,24 +566,7 @@ main {
     gap: 30px;
 }
 
-.contacts-page {
-    height: 100vh;
-    position: relative;
-}
-.home-page .container {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 10%;
-}
-.contacts-page .container {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 10%;
-}
+
 
 .form-group {
     position: relative;
@@ -578,7 +577,7 @@ main {
 }
 
 .form-group:nth-child(3) {
-    height: 150px;
+    height: 147px;
 }
 
 .form-group label {
@@ -706,6 +705,16 @@ input:-webkit-autofill:active {
 .info {
     display: none;
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    color: #7d748a;
+    margin: 20px 0;
+    font-weight: 200;
+}
 
 @media only screen and (max-width: 1300px) {
     .projects-grid-container {
@@ -756,10 +765,6 @@ input:-webkit-autofill:active {
         line-height: 45px;
     }
 
-    .image1 img {
-        width: 100%;
-    }
-
     li a.active::after {
         width: 40%;
     }
@@ -774,7 +779,9 @@ input:-webkit-autofill:active {
 }
 
 @media only screen and (max-width: 800px) {
-
+    .contacts-grid-container {
+        padding: 16px 0;
+    }
     .projects-grid-container {
         grid-template-columns: 1fr;
     }
@@ -785,10 +792,9 @@ input:-webkit-autofill:active {
 }
 
 @media only screen and (max-width: 600px) {
-    .arrow-down {
-        bottom: 10px;
+    .contacts-grid-container {
+        padding: 26px 0;
     }
-
     .name {
         line-height: 30px;
     }
@@ -804,9 +810,11 @@ input:-webkit-autofill:active {
     .grid-container {
         grid-template-columns: 1fr;
     }
+
     .hide {
         display: block;
     }
+
     .objectives {
         display: none;
         position: fixed;
@@ -839,9 +847,11 @@ input:-webkit-autofill:active {
         font-size: 30px;
         right: 0;
     }
+
     main {
         margin-left: 50px;
     }
+
     li a .icon {
         display: block;
         text-align: center;
@@ -860,6 +870,73 @@ input:-webkit-autofill:active {
     li a.active {
         margin-left: 0px;
     }
+
+    .projects-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+
+
+    .name {
+        line-height: 30px;
+    }
+
+    .job {
+        line-height: 20px;
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .objectives {
+        display: none;
+        position: fixed;
+        width: 250px;
+        left: 260px;
+        background: #1d1027;
+        bottom: 10px;
+        border-radius: 2px;
+        padding: 10px;
+    }
+
+    .objectives.show {
+        display: block;
+    }
+
+    .info {
+        color: #4bf4c9;
+        display: block;
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
+        font-size: 30px;
+    }
+
+    .close {
+        position: absolute;
+        display: block;
+        top: -7px;
+        color: #4bf4c9;
+        font-size: 30px;
+        right: 0;
+    }
+
+    main {
+        margin-left: 250px;
+    }
+
+
 
     .projects-grid-container {
         grid-template-columns: 1fr;

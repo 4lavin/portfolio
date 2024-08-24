@@ -1,3 +1,8 @@
+
+function showDescription(description) {
+    $(`.${description}`).toggleClass("projects-active")
+    
+}
 $(document).ready(function () {
     // accordion
     let accordion = $(".accordion")
@@ -60,7 +65,7 @@ $(document).ready(function () {
     info.click(function () {
         $(".objectives").toggleClass("show")
     })
-    
+
     //MyForm
 
     $("#send-message").submit(function (e) {
@@ -94,7 +99,7 @@ $(document).ready(function () {
         else {
             var templateParams = {
                 from_name: fromName,
-                email:email,
+                email: email,
                 message: message,
             };
             var serviveId = "service_p0ol3qg"
@@ -107,7 +112,7 @@ $(document).ready(function () {
                         title: "Your feedback has been sent",
                         showConfirmButton: false,
                         timer: 1500
-                      });
+                    });
                     $("#from_name").val("")
                     $("#email").val("")
                     $("#message").val("")
